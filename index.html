@@ -287,6 +287,23 @@
             top: 100%;
             border-top: 17.32px solid #1d4ed8;
         }
+        
+        /* Hide scrollbar but keep functionality */
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Smooth scrolling for touch devices */
+        @media (max-width: 768px) {
+            .nav-modern {
+                padding-bottom: 0;
+            }
+        }
     </style>
   <style>@view-transition { navigation: auto; }</style>
  </head>
@@ -310,8 +327,14 @@
    </div>
   </header><!-- Navigation -->
   <nav class="nav-modern sticky top-0 z-20 shadow-lg">
-   <div class="max-w-6xl mx-auto px-4">
-    <div class="flex justify-center space-x-2 py-4 overflow-x-auto"><button onclick="showSection('overview')" class="nav-btn sport-button px-6 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap"> 📊 Ringkasan </button> <button onclick="showSection('teams')" class="nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200"> 👥 Tim </button> <button onclick="showSection('profiles')" class="nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200"> 📋 Profil Tim </button> <button onclick="showSection('matches')" class="nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200"> ⚽ Hasil </button> <button onclick="showSection('standings')" class="nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200"> 📊 Klasemen </button> <button onclick="showSection('schedule')" class="nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200"> 📅 Jadwal </button> <button onclick="showSection('bracket')" class="nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200"> 🏆 Bracket </button>
+   <div class="max-w-6xl mx-auto px-2">
+    <div class="flex md:justify-center gap-2 py-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch; scroll-behavior: smooth; scroll-padding: 0 8px;"><button onclick="showSection('overview')" class="nav-btn sport-button px-5 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap snap-start flex-shrink-0"> 📊 Ringkasan </button> <button onclick="showSection('teams')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 👥 Tim </button> <button onclick="showSection('profiles')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📋 Profil </button> <button onclick="showSection('matches')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> ⚽ Hasil </button> <button onclick="showSection('standings')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📊 Klasemen </button> <button onclick="showSection('schedule')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📅 Jadwal </button> <button onclick="showSection('bracket')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 🏆 Bracket </button>
+    </div><!-- Scroll Indicator -->
+    <div class="md:hidden text-center pb-2">
+     <div class="inline-flex items-center text-xs text-slate-400 font-semibold">
+      <svg class="w-4 h-4 mr-1 animate-pulse" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg> Geser untuk menu lainnya
+     </div>
     </div>
    </div>
   </nav><!-- Main Content -->
@@ -1833,5 +1856,5 @@
             }
         });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a0da491725b3ddc',t:'MTc2MzUzMzY1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a0ddaff81294717',t:'MTc2MzUzNTg4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
