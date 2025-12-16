@@ -247,48 +247,6 @@
             mask-composite: exclude;
         }
         
-        .player-number {
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-            color: white;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
-        }
-        
-        .hexagon {
-            width: 60px;
-            height: 34.64px;
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            margin: 17.32px 0;
-            position: relative;
-        }
-        
-        .hexagon:before,
-        .hexagon:after {
-            content: "";
-            position: absolute;
-            width: 0;
-            border-left: 30px solid transparent;
-            border-right: 30px solid transparent;
-        }
-        
-        .hexagon:before {
-            bottom: 100%;
-            border-bottom: 17.32px solid #3b82f6;
-        }
-        
-        .hexagon:after {
-            top: 100%;
-            border-top: 17.32px solid #1d4ed8;
-        }
-        
-        /* Hide scrollbar but keep functionality */
         .scrollbar-hide {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -298,7 +256,6 @@
             display: none;
         }
         
-        /* Smooth scrolling for touch devices */
         @media (max-width: 768px) {
             .nav-modern {
                 padding-bottom: 0;
@@ -316,19 +273,13 @@
      <div class="soccer-ball ml-4"></div>
     </div>
     <p id="tournament-subtitle" class="text-2xl md:text-3xl mb-3 font-bold text-blue-100">Pertandingan Sepakbola U13</p>
-    <p id="tournament-date" class="text-xl font-semibold text-blue-200 mb-6">📅 4-8 Desember 2025</p>
-    <p id="welcome-message" class="mt-6 text-lg max-w-3xl mx-auto text-blue-100 leading-relaxed">Selamat datang di turnamen sepakbola terbesar untuk kategori U13!</p><!-- Sport Elements -->
-    <div class="absolute top-10 left-10 opacity-20">
-     <div class="hexagon"></div>
-    </div>
-    <div class="absolute bottom-10 right-10 opacity-20">
-     <div class="hexagon"></div>
-    </div>
+    <p id="tournament-date" class="text-xl font-semibold text-blue-200 mb-6">📅 15-19 Desember 2025</p>
+    <p id="welcome-message" class="mt-6 text-lg max-w-3xl mx-auto text-blue-100 leading-relaxed">Selamat datang di turnamen sepakbola terbesar untuk kategori U13!</p>
    </div>
   </header><!-- Navigation -->
   <nav class="nav-modern sticky top-0 z-20 shadow-lg">
    <div class="max-w-6xl mx-auto px-2">
-    <div class="flex md:justify-center gap-2 py-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch; scroll-behavior: smooth; scroll-padding: 0 8px;"><button onclick="showSection('overview')" class="nav-btn sport-button px-5 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap snap-start flex-shrink-0"> 📊 Ringkasan </button> <button onclick="showSection('teams')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 👥 Tim </button> <button onclick="showSection('profiles')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📋 Profil </button> <button onclick="showSection('matches')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> ⚽ Hasil </button> <button onclick="showSection('standings')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📊 Klasemen </button> <button onclick="showSection('schedule')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📅 Jadwal </button> <button onclick="showSection('bracket')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 🏆 Bracket </button>
+    <div class="flex md:justify-center gap-2 py-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch; scroll-behavior: smooth; scroll-padding: 0 8px;"><button onclick="showSection('overview')" class="nav-btn sport-button px-5 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap snap-start flex-shrink-0"> 📊 Ringkasan </button> <button onclick="showSection('teams')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 👥 Tim </button> <button onclick="showSection('standings')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📊 Klasemen </button> <button onclick="showSection('schedule')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📅 Jadwal </button> <button onclick="showSection('bracket')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 🏆 Bracket </button>
     </div><!-- Scroll Indicator -->
     <div class="md:hidden text-center pb-2">
      <div class="inline-flex items-center text-xs text-slate-400 font-semibold">
@@ -346,8 +297,8 @@
        🏟️
       </div>
       <h3 class="text-2xl font-black text-slate-800 mb-3">Total Tim</h3>
-      <p class="text-4xl font-black text-blue-600 mb-2">16 Tim</p>
-      <p class="text-slate-600 font-semibold">8 Tim Lokal + 8 Tim Luar Tapin</p>
+      <p class="text-4xl font-black text-blue-600 mb-2">14 Tim</p>
+      <p class="text-slate-600 font-semibold">Peserta BRE CUP 2025</p>
      </div>
      <div class="stats-card rounded-2xl p-8 card-hover text-center">
       <div class="text-4xl mb-4">
@@ -355,7 +306,7 @@
       </div>
       <h3 class="text-2xl font-black text-slate-800 mb-3">Durasi</h3>
       <p class="text-4xl font-black text-emerald-600 mb-2">5 Hari</p>
-      <p class="text-slate-600 font-semibold">4-8 Desember 2025</p>
+      <p class="text-slate-600 font-semibold">15-19 Desember 2025</p>
      </div>
      <div class="stats-card rounded-2xl p-8 card-hover text-center">
       <div class="text-4xl mb-4">
@@ -370,281 +321,316 @@
      <h2 class="text-3xl font-black text-slate-800 mb-8 text-center">🏆 Format Turnamen</h2>
      <div class="grid md:grid-cols-2 gap-10">
       <div class="animate-slide-left">
-       <h3 class="text-xl font-black text-blue-600 mb-6 flex items-center"><span class="mr-3">📋</span> Fase Grup</h3>
+       <h3 class="text-xl font-black text-blue-600 mb-6 flex items-center"><span class="mr-3">📋</span> Babak Penyisihan</h3>
        <ul class="space-y-3 text-slate-700">
-        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> 4 Grup (A, B, C, D)</li>
-        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Masing-masing grup 4 tim</li>
-        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Sistem round robin</li>
-        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> 2 tim terbaik lolos ke semifinal</li>
+        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> 8 Pertandingan</li>
+        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> 2 Lapangan Paralel</li>
+        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> 8 tim terbaik lolos</li>
+        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Durasi: 75 menit/pertandingan</li>
        </ul>
       </div>
       <div class="animate-slide-right">
        <h3 class="text-xl font-black text-blue-600 mb-6 flex items-center"><span class="mr-3">🏅</span> Fase Knockout</h3>
        <ul class="space-y-3 text-slate-700">
-        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Semifinal (8 tim)</li>
+        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Perempat Final (8 tim)</li>
+        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Semifinal (4 tim)</li>
         <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Final &amp; Perebutan Juara 3</li>
         <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Sistem gugur langsung</li>
-        <li class="flex items-center font-semibold"><span class="text-emerald-500 mr-3 text-lg">✓</span> Extra time jika diperlukan</li>
        </ul>
       </div>
      </div>
-    </div>
-   </section><!-- Matches Section -->
-   <section id="matches-section" class="hidden">
-    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">⚽ Hasil Pertandingan</h2><!-- Add Match Form -->
-    <div class="sport-card rounded-2xl p-8 shadow-xl mb-12">
-     <h3 class="text-2xl font-black text-blue-600 mb-8 flex items-center"><span class="mr-3">➕</span> Tambah Hasil Pertandingan</h3>
-     <form id="match-form" class="space-y-8"><!-- Basic Match Info -->
-      <div class="grid md:grid-cols-2 gap-6">
-       <div><label for="match-date" class="block text-sm font-bold text-slate-700 mb-3">📅 Tanggal</label> <input type="date" id="match-date" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required>
-       </div>
-       <div><label for="match-time" class="block text-sm font-bold text-slate-700 mb-3">⏰ Waktu</label> <input type="time" id="match-time" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required>
-       </div>
-       <div><label for="team-home" class="block text-sm font-bold text-slate-700 mb-3">🏠 Tim Tuan Rumah</label> <select id="team-home" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required> <option value="">Pilih Tim</option> </select>
-       </div>
-       <div><label for="team-away" class="block text-sm font-bold text-slate-700 mb-3">✈️ Tim Tamu</label> <select id="team-away" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required> <option value="">Pilih Tim</option> </select>
-       </div>
-       <div><label for="score-home" class="block text-sm font-bold text-slate-700 mb-3">⚽ Skor Tuan Rumah</label> <input type="number" id="score-home" min="0" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required>
-       </div>
-       <div><label for="score-away" class="block text-sm font-bold text-slate-700 mb-3">⚽ Skor Tamu</label> <input type="number" id="score-away" min="0" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required>
-       </div>
-       <div><label for="match-group" class="block text-sm font-bold text-slate-700 mb-3">🏆 Grup</label> <select id="match-group" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required> <option value="">Pilih Grup</option> <option value="A">Grup A</option> <option value="B">Grup B</option> <option value="C">Grup C</option> <option value="D">Grup D</option> </select>
-       </div>
-       <div><label for="match-phase" class="block text-sm font-bold text-slate-700 mb-3">🎯 Fase</label> <select id="match-phase" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-semibold" required> <option value="">Pilih Fase</option> <option value="Grup">Fase Grup</option> <option value="Semifinal">Semifinal</option> <option value="Final">Final</option> <option value="Juara 3">Perebutan Juara 3</option> </select>
-       </div>
-      </div><!-- Match Details -->
-      <div class="border-t-2 border-slate-200 pt-8">
-       <h4 class="text-xl font-black text-slate-800 mb-6">📋 Detail Pertandingan</h4>
-       <div class="grid md:grid-cols-2 gap-6">
-        <div><label for="goalscorers" class="block text-sm font-bold text-slate-700 mb-3">⚽ Pencetak Gol</label> <textarea id="goalscorers" rows="3" placeholder="Contoh: Ahmad Rizki 15', 45' (FC Tapin United); Dani Pratama 30' (Banjarmasin FC)" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium"></textarea>
-         <p class="text-xs text-slate-500 mt-2 font-semibold">Format: Nama Pemain Menit' (Tim); pisahkan dengan titik koma</p>
+     <div class="mt-10 pt-10 border-t-2 border-slate-200">
+      <h3 class="text-xl font-black text-slate-800 mb-6 text-center">⏱️ Estimasi Waktu Pertandingan</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+       <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl text-center border-2 border-blue-200">
+        <div class="text-3xl font-black text-blue-600">
+         30'
         </div>
-        <div><label for="yellow-cards" class="block text-sm font-bold text-slate-700 mb-3">🟨 Kartu Kuning</label> <textarea id="yellow-cards" rows="3" placeholder="Contoh: Bayu Anggara 25' (Martapura City FC); Gilang Ramadhan 60' (Tanah Laut Rangers)" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium"></textarea>
-         <p class="text-xs text-slate-500 mt-2 font-semibold">Format: Nama Pemain Menit' (Tim); pisahkan dengan titik koma</p>
+        <div class="text-sm text-slate-600 font-semibold mt-2">
+         Babak Pertama
         </div>
-        <div><label for="red-cards" class="block text-sm font-bold text-slate-700 mb-3">🟥 Kartu Merah</label> <textarea id="red-cards" rows="2" placeholder="Contoh: Yoga Pratama 75' (Banjar Selatan FC)" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium"></textarea>
-         <p class="text-xs text-slate-500 mt-2 font-semibold">Format: Nama Pemain Menit' (Tim); pisahkan dengan titik koma</p>
+       </div>
+       <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl text-center border-2 border-orange-200">
+        <div class="text-3xl font-black text-orange-600">
+         15'
         </div>
-        <div><label for="man-of-match" class="block text-sm font-bold text-slate-700 mb-3">🌟 Man of the Match</label> <input type="text" id="man-of-match" placeholder="Contoh: Ahmad Rizki (FC Tapin United)" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium">
+        <div class="text-sm text-slate-600 font-semibold mt-2">
+         Istirahat
         </div>
-        <div><label for="referee" class="block text-sm font-bold text-slate-700 mb-3">👨‍⚖️ Wasit</label> <input type="text" id="referee" placeholder="Contoh: Pak Hendra Wijaya" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium">
+       </div>
+       <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl text-center border-2 border-emerald-200">
+        <div class="text-3xl font-black text-emerald-600">
+         30'
         </div>
-        <div><label for="attendance" class="block text-sm font-bold text-slate-700 mb-3">👥 Jumlah Penonton</label> <input type="number" id="attendance" min="0" placeholder="Contoh: 150" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium">
+        <div class="text-sm text-slate-600 font-semibold mt-2">
+         Babak Kedua
         </div>
        </div>
       </div>
-      <div class="border-t-2 border-slate-200 pt-8"><button type="submit" id="submit-match" class="w-full sport-button text-white py-4 px-8 rounded-xl font-black text-lg"> 💾 Simpan Hasil Pertandingan </button>
-      </div>
-     </form>
-    </div><!-- Matches List -->
-    <div class="sport-card rounded-2xl p-8 shadow-xl">
-     <h3 class="text-2xl font-black text-slate-800 mb-8">📋 Daftar Hasil Pertandingan</h3>
-     <div id="matches-list" class="space-y-6">
-      <div class="text-center text-slate-500 py-12">
-       <div class="text-6xl mb-6">
-        ⚽
-       </div>
-       <p class="text-xl font-bold">Belum ada hasil pertandingan yang diinput</p>
-       <p class="text-sm font-semibold">Tambahkan hasil pertandingan menggunakan form di atas</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Standings Section -->
-   <section id="standings-section" class="hidden">
-    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">📊 Klasemen Grup</h2>
-    <div class="grid md:grid-cols-2 gap-10"><!-- Grup A & B -->
-     <div class="space-y-8">
-      <div class="sport-card rounded-2xl p-8 shadow-xl">
-       <h3 class="text-2xl font-black text-blue-600 mb-6 text-center flex items-center justify-center"><span class="mr-3">🏆</span> Grup A</h3>
-       <div id="standings-group-a" class="overflow-x-auto">
-        <table class="w-full text-sm">
-         <thead class="bg-gradient-to-r from-blue-50 to-blue-100">
-          <tr>
-           <th class="px-4 py-3 text-left font-black">Pos</th>
-           <th class="px-4 py-3 text-left font-black">Tim</th>
-           <th class="px-4 py-3 text-center font-black">Main</th>
-           <th class="px-4 py-3 text-center font-black">M</th>
-           <th class="px-4 py-3 text-center font-black">S</th>
-           <th class="px-4 py-3 text-center font-black">K</th>
-           <th class="px-4 py-3 text-center font-black">Poin</th>
-          </tr>
-         </thead>
-         <tbody id="group-a-table">
-          <tr>
-           <td colspan="7" class="text-center py-6 text-slate-500 font-semibold">Belum ada data</td>
-          </tr>
-         </tbody>
-        </table>
-       </div>
-      </div>
-      <div class="sport-card rounded-2xl p-8 shadow-xl">
-       <h3 class="text-2xl font-black text-emerald-600 mb-6 text-center flex items-center justify-center"><span class="mr-3">🏆</span> Grup B</h3>
-       <div id="standings-group-b" class="overflow-x-auto">
-        <table class="w-full text-sm">
-         <thead class="bg-gradient-to-r from-emerald-50 to-emerald-100">
-          <tr>
-           <th class="px-4 py-3 text-left font-black">Pos</th>
-           <th class="px-4 py-3 text-left font-black">Tim</th>
-           <th class="px-4 py-3 text-center font-black">Main</th>
-           <th class="px-4 py-3 text-center font-black">M</th>
-           <th class="px-4 py-3 text-center font-black">S</th>
-           <th class="px-4 py-3 text-center font-black">K</th>
-           <th class="px-4 py-3 text-center font-black">Poin</th>
-          </tr>
-         </thead>
-         <tbody id="group-b-table">
-          <tr>
-           <td colspan="7" class="text-center py-6 text-slate-500 font-semibold">Belum ada data</td>
-          </tr>
-         </tbody>
-        </table>
-       </div>
-      </div>
-     </div><!-- Grup C & D -->
-     <div class="space-y-8">
-      <div class="sport-card rounded-2xl p-8 shadow-xl">
-       <h3 class="text-2xl font-black text-orange-600 mb-6 text-center flex items-center justify-center"><span class="mr-3">🏆</span> Grup C</h3>
-       <div id="standings-group-c" class="overflow-x-auto">
-        <table class="w-full text-sm">
-         <thead class="bg-gradient-to-r from-orange-50 to-orange-100">
-          <tr>
-           <th class="px-4 py-3 text-left font-black">Pos</th>
-           <th class="px-4 py-3 text-left font-black">Tim</th>
-           <th class="px-4 py-3 text-center font-black">Main</th>
-           <th class="px-4 py-3 text-center font-black">M</th>
-           <th class="px-4 py-3 text-center font-black">S</th>
-           <th class="px-4 py-3 text-center font-black">K</th>
-           <th class="px-4 py-3 text-center font-black">Poin</th>
-          </tr>
-         </thead>
-         <tbody id="group-c-table">
-          <tr>
-           <td colspan="7" class="text-center py-6 text-slate-500 font-semibold">Belum ada data</td>
-          </tr>
-         </tbody>
-        </table>
-       </div>
-      </div>
-      <div class="sport-card rounded-2xl p-8 shadow-xl">
-       <h3 class="text-2xl font-black text-purple-600 mb-6 text-center flex items-center justify-center"><span class="mr-3">🏆</span> Grup D</h3>
-       <div id="standings-group-d" class="overflow-x-auto">
-        <table class="w-full text-sm">
-         <thead class="bg-gradient-to-r from-purple-50 to-purple-100">
-          <tr>
-           <th class="px-4 py-3 text-left font-black">Pos</th>
-           <th class="px-4 py-3 text-left font-black">Tim</th>
-           <th class="px-4 py-3 text-center font-black">Main</th>
-           <th class="px-4 py-3 text-center font-black">M</th>
-           <th class="px-4 py-3 text-center font-black">S</th>
-           <th class="px-4 py-3 text-center font-black">K</th>
-           <th class="px-4 py-3 text-center font-black">Poin</th>
-          </tr>
-         </thead>
-         <tbody id="group-d-table">
-          <tr>
-           <td colspan="7" class="text-center py-6 text-slate-500 font-semibold">Belum ada data</td>
-          </tr>
-         </tbody>
-        </table>
+      <div class="text-center mt-6">
+       <div class="inline-block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+        <div class="text-2xl font-black">
+         Total: 75 Menit
+        </div>
        </div>
       </div>
      </div>
     </div>
    </section><!-- Teams Section -->
    <section id="teams-section" class="hidden">
-    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">👥 Tim Peserta</h2>
-    <div class="grid md:grid-cols-2 gap-10"><!-- Tim Lokal -->
-     <div>
-      <h3 class="text-3xl font-black text-emerald-600 mb-8 text-center flex items-center justify-center"><span class="mr-3">🏠</span> Tim Lokal Tapin</h3>
-      <div class="space-y-6" id="local-teams"><!-- Tim lokal akan diisi oleh JavaScript -->
-      </div>
-     </div><!-- Tim Luar -->
-     <div>
-      <h3 class="text-3xl font-black text-orange-600 mb-8 text-center flex items-center justify-center"><span class="mr-3">🌍</span> Tim Luar Tapin</h3>
-      <div class="space-y-6" id="away-teams"><!-- Tim luar akan diisi oleh JavaScript -->
-      </div>
-     </div>
+    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">👥 Tim Peserta BRE CUP 2025</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="all-teams-container"><!-- Teams akan diisi oleh JavaScript -->
     </div>
-   </section><!-- Team Profiles Section -->
-   <section id="profiles-section" class="hidden">
-    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">📋 Profil Tim</h2><!-- Group Tabs -->
-    <div class="flex justify-center mb-12">
-     <div class="sport-card rounded-2xl p-2 shadow-lg"><button onclick="showGroupProfiles('A')" class="group-tab sport-button px-6 py-3 rounded-xl font-black transition-all duration-300 text-white"> Grup A </button> <button onclick="showGroupProfiles('B')" class="group-tab px-6 py-3 rounded-xl font-black transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600"> Grup B </button> <button onclick="showGroupProfiles('C')" class="group-tab px-6 py-3 rounded-xl font-black transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600"> Grup C </button> <button onclick="showGroupProfiles('D')" class="group-tab px-6 py-3 rounded-xl font-black transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600"> Grup D </button>
+   </section><!-- Standings Section -->
+   <section id="standings-section" class="hidden">
+    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">📊 Klasemen Sementara</h2><!-- Standings Table -->
+    <div class="sport-card rounded-2xl p-8 shadow-xl mb-8">
+     <div class="overflow-x-auto">
+      <table class="w-full">
+       <thead>
+        <tr class="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+         <th class="px-6 py-4 text-left font-black text-sm rounded-tl-xl">Pos</th>
+         <th class="px-6 py-4 text-left font-black text-sm">Tim</th>
+         <th class="px-6 py-4 text-center font-black text-sm">Main</th>
+         <th class="px-6 py-4 text-center font-black text-sm">M</th>
+         <th class="px-6 py-4 text-center font-black text-sm">S</th>
+         <th class="px-6 py-4 text-center font-black text-sm">K</th>
+         <th class="px-6 py-4 text-center font-black text-sm">GM</th>
+         <th class="px-6 py-4 text-center font-black text-sm">GK</th>
+         <th class="px-6 py-4 text-center font-black text-sm">SG</th>
+         <th class="px-6 py-4 text-center font-black text-sm rounded-tr-xl">Poin</th>
+        </tr>
+       </thead>
+       <tbody id="standings-table"><!-- Data akan diisi otomatis -->
+       </tbody>
+      </table>
      </div>
-    </div><!-- Group Profiles -->
-    <div id="group-profiles-container"><!-- Grup A -->
-     <div id="group-a-profiles" class="group-profiles">
-      <h3 class="text-3xl font-black text-blue-600 mb-10 text-center">🏆 Grup A</h3>
-      <div class="grid md:grid-cols-2 gap-8" id="group-a-teams"><!-- Teams will be populated by JavaScript -->
+    </div><!-- Legend -->
+    <div class="grid md:grid-cols-2 gap-6">
+     <div class="sport-card rounded-2xl p-6 shadow-xl">
+      <h3 class="text-xl font-black text-slate-800 mb-4">📖 Keterangan</h3>
+      <div class="space-y-3 text-sm">
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">Main</span> <span class="text-slate-800">Pertandingan Dimainkan</span>
+       </div>
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">M</span> <span class="text-slate-800">Menang</span>
+       </div>
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">S</span> <span class="text-slate-800">Seri</span>
+       </div>
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">K</span> <span class="text-slate-800">Kalah</span>
+       </div>
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">GM</span> <span class="text-slate-800">Gol Memasukkan</span>
+       </div>
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">GK</span> <span class="text-slate-800">Gol Kemasukan</span>
+       </div>
+       <div class="flex justify-between font-semibold"><span class="text-slate-600">SG</span> <span class="text-slate-800">Selisih Gol</span>
+       </div>
       </div>
-     </div><!-- Grup B -->
-     <div id="group-b-profiles" class="group-profiles hidden">
-      <h3 class="text-3xl font-black text-emerald-600 mb-10 text-center">🏆 Grup B</h3>
-      <div class="grid md:grid-cols-2 gap-8" id="group-b-teams"><!-- Teams will be populated by JavaScript -->
+     </div>
+     <div class="sport-card rounded-2xl p-6 shadow-xl">
+      <h3 class="text-xl font-black text-slate-800 mb-4">🏆 Sistem Poin</h3>
+      <div class="space-y-3">
+       <div class="flex items-center bg-gradient-to-r from-emerald-50 to-emerald-100 p-4 rounded-xl border-2 border-emerald-200"><span class="text-3xl mr-4">🥇</span>
+        <div>
+         <div class="font-black text-emerald-800">
+          Menang
+         </div>
+         <div class="text-sm text-emerald-600 font-semibold">
+          +3 Poin
+         </div>
+        </div>
+       </div>
+       <div class="flex items-center bg-gradient-to-r from-orange-50 to-orange-100 p-4 rounded-xl border-2 border-orange-200"><span class="text-3xl mr-4">🤝</span>
+        <div>
+         <div class="font-black text-orange-800">
+          Seri
+         </div>
+         <div class="text-sm text-orange-600 font-semibold">
+          +1 Poin
+         </div>
+        </div>
+       </div>
+       <div class="flex items-center bg-gradient-to-r from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200"><span class="text-3xl mr-4">❌</span>
+        <div>
+         <div class="font-black text-slate-800">
+          Kalah
+         </div>
+         <div class="text-sm text-slate-600 font-semibold">
+          0 Poin
+         </div>
+        </div>
+       </div>
       </div>
-     </div><!-- Grup C -->
-     <div id="group-c-profiles" class="group-profiles hidden">
-      <h3 class="text-3xl font-black text-orange-600 mb-10 text-center">🏆 Grup C</h3>
-      <div class="grid md:grid-cols-2 gap-8" id="group-c-teams"><!-- Teams will be populated by JavaScript -->
-      </div>
-     </div><!-- Grup D -->
-     <div id="group-d-profiles" class="group-profiles hidden">
-      <h3 class="text-3xl font-black text-purple-600 mb-10 text-center">🏆 Grup D</h3>
-      <div class="grid md:grid-cols-2 gap-8" id="group-d-teams"><!-- Teams will be populated by JavaScript -->
+     </div>
+    </div><!-- Note -->
+    <div class="sport-card rounded-2xl p-6 shadow-xl mt-8">
+     <div class="flex items-start"><span class="text-2xl mr-4">ℹ️</span>
+      <div>
+       <h4 class="font-black text-slate-800 mb-2">Catatan</h4>
+       <p class="text-slate-600 font-semibold text-sm">Klasemen ini dihitung berdasarkan hasil pertandingan yang telah dimainkan. Urutan ditentukan berdasarkan: 1) Poin, 2) Selisih Gol, 3) Jumlah Gol Memasukkan.</p>
       </div>
      </div>
     </div>
    </section><!-- Schedule Section -->
    <section id="schedule-section" class="hidden">
-    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">📅 Jadwal Pertandingan</h2>
-    <div id="schedule-container"><!-- Jadwal akan diisi oleh JavaScript -->
+    <h2 class="text-4xl font-black text-center text-slate-800 mb-12">📅 Jadwal Lengkap BRE CUP 2025</h2><!-- Jadwal akan diisi oleh JavaScript -->
+    <div id="schedule-container"></div><!-- Catatan Penting -->
+    <div class="sport-card rounded-2xl p-8 shadow-xl mt-12">
+     <h3 class="text-2xl font-black text-red-600 mb-6 flex items-center"><span class="mr-3">📌</span> Catatan Penting</h3>
+     <ul class="space-y-4 text-slate-700">
+      <li class="flex items-start font-semibold"><span class="text-red-500 mr-3 text-lg mt-1">⚠️</span> <span>Jadwal dapat berubah sesuai kondisi lapangan</span></li>
+      <li class="flex items-start font-semibold"><span class="text-blue-500 mr-3 text-lg mt-1">⏰</span> <span>Tim wajib hadir dan menyerahkan daftar pemain 15 menit sebelum pertandingan</span></li>
+      <li class="flex items-start font-semibold"><span class="text-orange-500 mr-3 text-lg mt-1">🌦️</span> <span>Pertandingan dapat ditunda karena faktor cuaca dan dilanjutkan keesokan harinya (Force Majeure)</span></li>
+     </ul>
     </div>
    </section><!-- Bracket Section -->
    <section id="bracket-section" class="hidden">
     <h2 class="text-4xl font-black text-center text-slate-800 mb-12">🏆 Bracket Turnamen</h2>
-    <div class="sport-card rounded-2xl p-10 shadow-xl">
-     <div class="text-center mb-12">
-      <h3 class="text-2xl font-black text-blue-600 mb-8">Struktur Turnamen</h3>
-      <div class="grid grid-cols-4 gap-6 mb-12">
-       <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border-2 border-blue-200">
-        <h4 class="font-black text-blue-800 text-lg">Grup A</h4>
-        <div class="text-sm text-slate-600 mt-2 font-semibold">
-         4 Tim
+    <div class="sport-card rounded-2xl p-10 shadow-xl mb-10">
+     <h3 class="text-2xl font-black text-blue-600 mb-8 text-center">📊 Alur Turnamen</h3><!-- Stage 1: Penyisihan -->
+     <div class="mb-10">
+      <div class="text-center mb-6">
+       <div class="inline-block bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+        <h4 class="text-xl font-black">BABAK PENYISIHAN</h4>
+        <p class="text-sm opacity-90">15 Desember 2025</p>
+       </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         14 Tim
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Bertanding
         </div>
        </div>
-       <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl border-2 border-emerald-200">
-        <h4 class="font-black text-emerald-800 text-lg">Grup B</h4>
-        <div class="text-sm text-slate-600 mt-2 font-semibold">
-         4 Tim
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         8 Pertandingan
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Total Match
         </div>
        </div>
-       <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl border-2 border-orange-200">
-        <h4 class="font-black text-orange-800 text-lg">Grup C</h4>
-        <div class="text-sm text-slate-600 mt-2 font-semibold">
-         4 Tim
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         2 Lapangan
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Paralel
         </div>
        </div>
-       <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl border-2 border-purple-200">
-        <h4 class="font-black text-purple-800 text-lg">Grup D</h4>
-        <div class="text-sm text-slate-600 mt-2 font-semibold">
-         4 Tim
+       <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-4 rounded-xl border-2 border-emerald-200 text-center">
+        <div class="font-black text-emerald-800">
+         8 Tim
+        </div>
+        <div class="text-sm text-emerald-700 font-semibold">
+         Lolos
         </div>
        </div>
       </div>
-     </div>
-     <div class="text-center">
-      <div class="inline-block bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white px-12 py-6 rounded-2xl shadow-2xl">
-       <h3 class="text-3xl font-black">🏆 FINAL</h3>
-       <p class="text-sm opacity-90 font-semibold">8 Desember 2025</p>
+     </div><!-- Arrow Down -->
+     <div class="text-center mb-10">
+      <div class="text-4xl">
+       ⬇️
       </div>
-      <div class="mt-12 grid md:grid-cols-2 gap-8">
-       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border-2 border-slate-200">
-        <h4 class="font-black text-slate-800 mb-4 text-lg">🥉 Perebutan Juara 3</h4>
-        <p class="text-slate-600 font-semibold">Antara 2 tim yang kalah di semifinal</p>
+     </div><!-- Stage 2: Perempat Final -->
+     <div class="mb-10">
+      <div class="text-center mb-6">
+       <div class="inline-block bg-gradient-to-r from-emerald-500 to-emerald-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+        <h4 class="text-xl font-black">PEREMPAT FINAL</h4>
+        <p class="text-sm opacity-90">16 Desember 2025</p>
        </div>
-       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border-2 border-slate-200">
-        <h4 class="font-black text-slate-800 mb-4 text-lg">🏅 Penghargaan</h4>
-        <p class="text-slate-600 font-semibold">Juara 1, 2, 3 + Pemain Terbaik</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         8 Tim
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Bertanding
+        </div>
+       </div>
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         4 Pertandingan
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Total Match
+        </div>
+       </div>
+       <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-4 rounded-xl border-2 border-emerald-200 text-center">
+        <div class="font-black text-emerald-800">
+         4 Tim
+        </div>
+        <div class="text-sm text-emerald-700 font-semibold">
+         Lolos
+        </div>
+       </div>
+      </div>
+     </div><!-- Arrow Down -->
+     <div class="text-center mb-10">
+      <div class="text-4xl">
+       ⬇️
+      </div>
+     </div><!-- Stage 3: Semifinal -->
+     <div class="mb-10">
+      <div class="text-center mb-6">
+       <div class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+        <h4 class="text-xl font-black">SEMIFINAL</h4>
+        <p class="text-sm opacity-90">17-18 Desember 2025</p>
+       </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         4 Tim
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Bertanding
+        </div>
+       </div>
+       <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-xl border-2 border-slate-200 text-center">
+        <div class="font-black text-slate-800">
+         2 Pertandingan
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Total Match
+        </div>
+       </div>
+       <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-4 rounded-xl border-2 border-emerald-200 text-center">
+        <div class="font-black text-emerald-800">
+         2 Tim
+        </div>
+        <div class="text-sm text-emerald-700 font-semibold">
+         Lolos Final
+        </div>
+       </div>
+      </div>
+     </div><!-- Arrow Down -->
+     <div class="text-center mb-10">
+      <div class="text-4xl">
+       ⬇️
+      </div>
+     </div><!-- Stage 4: Final -->
+     <div>
+      <div class="grid md:grid-cols-2 gap-8">
+       <div class="text-center">
+        <div class="inline-block bg-gradient-to-r from-amber-600 to-amber-700 text-white px-8 py-6 rounded-2xl shadow-2xl mb-6">
+         <h4 class="text-2xl font-black">🥉 PEREBUTAN JUARA 3</h4>
+         <p class="text-sm opacity-90 mt-2">19 Desember 2025 • 08:00</p>
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Kalah Semifinal 1 vs Kalah Semifinal 2
+        </div>
+       </div>
+       <div class="text-center">
+        <div class="inline-block bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white px-8 py-6 rounded-2xl shadow-2xl mb-6">
+         <h4 class="text-2xl font-black">🏆 GRAND FINAL</h4>
+         <p class="text-sm opacity-90 mt-2">19 Desember 2025 • 16:00</p>
+        </div>
+        <div class="text-sm text-slate-600 font-semibold">
+         Menang Semifinal 1 vs Menang Semifinal 2
+        </div>
        </div>
       </div>
      </div>
@@ -663,516 +649,74 @@
    </div>
   </footer>
   <script>
-        // Data tim
-        const localTeams = [
-            'FC Tapin United', 'Barito Putera Academy', 'Tapin Rangers FC', 'Martapura City FC',
-            'Banjar Selatan FC', 'Kandangan United', 'Tapin Muda FC', 'Binuang Stars FC'
+        // Data tim peserta BRE CUP 2025
+        const allTeams = [
+            'SOBP Tapin',
+            'Tapin Tengah JR',
+            'SSB Nagara Dipa',
+            'SSB AYPA',
+            'SSB Sejahtera MTP',
+            'SOBP Banjarbaru',
+            'SSB GMS',
+            'SSB Panca',
+            'Garuda Jaya',
+            'SSB Arasi',
+            'Haus Soccer Kodim 1007',
+            'SSB H5B',
+            'SSB Surapati',
+            'SSB Rising Star',
+            'SOBP Tabalong',
+            'SSB Batu Agung'
         ];
-        
-        const awayTeams = [
-            'Banjarmasin FC', 'Banjarbaru United', 'Kotabaru FC', 'Tanah Laut Rangers',
-            'Hulu Sungai FC', 'Balangan United', 'Tabalong FC', 'Banjar Utara FC'
-        ];
 
-        const allTeams = [...localTeams, ...awayTeams];
-
-        // Data profil tim lengkap dengan daftar pemain
-        const teamProfiles = {
-            // Grup A
-            'FC Tapin United': {
-                group: 'A',
-                type: 'local',
-                coach: 'Budi Santoso',
-                founded: '2018',
-                city: 'Rantau',
-                colors: 'Merah & Putih',
-                captain: 'Ahmad Rizki',
-                achievements: ['Juara Liga Tapin 2023', 'Runner-up Piala Kalimantan Selatan 2024'],
-                players: [
-                    { number: 1, name: 'Fajar Ramadhan', position: 'Kiper' },
-                    { number: 2, name: 'Ahmad Rizki', position: 'Bek Kanan' },
-                    { number: 3, name: 'Dani Pratama', position: 'Bek Tengah' },
-                    { number: 4, name: 'Bayu Anggara', position: 'Bek Tengah' },
-                    { number: 5, name: 'Gilang Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Yoga Pratama', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Farel Naufal', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Rafli Akbar', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Alvin Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Kevin Maulana', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Nabil Firdaus', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Rizky Ananda', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Dimas Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Arif Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Iqbal Maulana', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Reza Pratama', position: 'Sayap Cadangan' }
-                ],
-                description: 'Tim sepakbola muda yang berdiri sejak 2018 dengan semangat juang tinggi dan tekad untuk menjadi yang terbaik.'
+        // Jadwal pertandingan lengkap
+        const scheduleData = [
+            {
+                date: 'Senin, 15 Desember 2025',
+                phase: 'Babak Penyisihan - Hari 1',
+                matches: [
+                    { time: '17:30-18:45', venue: 'Lapangan I', home: 'SOBP Tapin', away: 'Tapin Tengah JR', score_home: 2, score_away: 1 },
+                    { time: '17:30-18:45', venue: 'Lapangan II', home: 'SSB Nagara Dipa', away: 'SSB AYPA', score_home: 7, score_away: 1 },
+                    { time: '18:45-20:30', venue: 'Lapangan I', home: 'SSB Sejahtera MTP', away: 'SOBP Banjarbaru', score_home: 3, score_away: 0 }
+                ]
             },
-            'Banjarmasin FC': {
-                group: 'A',
-                type: 'away',
-                coach: 'Hendra Wijaya',
-                founded: '2015',
-                city: 'Banjarmasin',
-                colors: 'Biru & Kuning',
-                captain: 'Dani Pratama',
-                achievements: ['Juara Piala Banjarmasin 2023', 'Juara Liga U13 Kalsel 2024'],
-                players: [
-                    { number: 1, name: 'Andi Setiawan', position: 'Kiper' },
-                    { number: 2, name: 'Dani Pratama', position: 'Bek Kanan' },
-                    { number: 3, name: 'Budi Santoso', position: 'Bek Tengah' },
-                    { number: 4, name: 'Candra Wijaya', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eko Prasetyo', position: 'Bek Kiri' },
-                    { number: 6, name: 'Firman Hidayat', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Galih Ramadhan', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hadi Kurniawan', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Ivan Maulana', position: 'Penyerang' },
-                    { number: 10, name: 'Joko Susilo', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Bayu', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Rahman', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Yusuf', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Pratama', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Oscar Wijaya', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Putra Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qori Maulana', position: 'Utility Player' },
-                    { number: 18, name: 'Rizal Effendi', position: 'Utility Player' }
-                ],
-                description: 'Tim dengan tradisi kuat dari ibu kota Kalimantan Selatan, dikenal dengan permainan yang solid dan terorganisir.'
+            {
+                date: 'Selasa, 16 Desember 2025',
+                phase: 'Babak Penyisihan - Hari 2 & Perempat Final',
+                matches: [
+                    { time: '08:00-09:15', venue: 'Lapangan II', home: 'SSB GMS', away: 'SSB Panca', score_home: 0, score_away: 3 },
+                    { time: '08:00-09:15', venue: 'Lapangan I', home: 'Garuda Jaya', away: 'SSB Arasi', score_home: 6, score_away: 7 },
+                    { time: '09:15-10:30', venue: 'Lapangan II', home: 'Haus Soccer Kodim 1007', away: 'SSB H5B', score_home: 3, score_away: 0 },
+                    { time: '09:15-10:30', venue: 'Lapangan I', home: 'SSB Surapati', away: 'SSB Rising Star', score_home: 6, score_away: 1 },
+                    { time: '10:30-11:45', venue: 'Lapangan II', home: 'SOBP Tabalong', away: 'SSB Batu Agung', score_home: 3, score_away: 2 },
+                    { time: '15:00-16:15', venue: 'Lapangan I', home: 'SOBP Tapin', away: 'SSB Arasi', score_home: 1, score_away: 6 },
+                    { time: '15:00-16:15', venue: 'Lapangan II', home: 'SOBP Tabalong', away: 'SSB Nagara Dipa', score_home: 3, score_away: 4 },
+                    { time: '16:15-17:30', venue: 'Lapangan I', home: 'SSB Surapati', away: 'SSB Sejahtera MTP', score_home: 1, score_away: 5 },
+                    { time: '16:15-17:30', venue: 'Lapangan II', home: 'SSB Panca', away: 'Haus Soccer Kodim 1007', score_home: 0, score_away: 6 }
+                ]
             },
-            'Barito Putera Academy': {
-                group: 'A',
-                type: 'local',
-                coach: 'Sandi Kurniawan',
-                founded: '2020',
-                city: 'Martapura',
-                colors: 'Hijau & Putih',
-                captain: 'Fajar Ramadhan',
-                achievements: ['Juara Tournament Muda 2024'],
-                players: [
-                    { number: 1, name: 'Agus Salim', position: 'Kiper' },
-                    { number: 2, name: 'Bagas Pratama', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cahya Ramadhan', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dedy Hermawan', position: 'Bek Tengah' },
-                    { number: 5, name: 'Edi Kurniawan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fajar Ramadhan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gilang Saputra', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hendra Bayu', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Indra Maulana', position: 'Penyerang' },
-                    { number: 10, name: 'Jaka Pratama', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kenzo Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Luthfi Hidayat', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Miko Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Naufal Bayu', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Okta Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Akademi muda yang fokus pada pengembangan talenta sepakbola dengan metode pelatihan modern.'
+            {
+                date: 'Rabu, 17 Desember 2025',
+                phase: 'Semifinal - Pertandingan 1',
+                matches: [
+                    { time: '16:00-17:15', venue: 'Lapangan I', home: 'SSB Arasi', away: 'SSB Sejahtera MTP', score_home: null, score_away: null }
+                ]
             },
-            'Kotabaru FC': {
-                group: 'A',
-                type: 'away',
-                coach: 'Rizal Effendi',
-                founded: '2017',
-                city: 'Kotabaru',
-                colors: 'Hitam & Emas',
-                captain: 'Iqbal Maulana',
-                achievements: ['Juara Liga Kotabaru 2023'],
-                players: [
-                    { number: 1, name: 'Aldi Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bima Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cakra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dafa Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eka Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fandi Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Genta Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Haris Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Iqbal Maulana', position: 'Penyerang' },
-                    { number: 10, name: 'Jihan Pratama', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kafi Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lendra Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Mandra Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nizar Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Ovan Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pasha Ramadhan', position: 'Sayap Cadangan' }
-                ],
-                description: 'Tim dari pesisir Kalimantan Selatan yang terkenal dengan kecepatan dan ketangkasan pemainnya.'
+            {
+                date: 'Kamis, 18 Desember 2025',
+                phase: 'Semifinal - Pertandingan 2',
+                matches: [
+                    { time: '16:00-17:15', venue: 'Lapangan I', home: 'Haus Soccer Kodim 1007', away: 'SSB Nagara Dipa', score_home: null, score_away: null }
+                ]
             },
-
-            // Grup B
-            'Tapin Rangers FC': {
-                group: 'B',
-                type: 'local',
-                coach: 'Agus Salim',
-                founded: '2019',
-                city: 'Binuang',
-                colors: 'Orange & Hitam',
-                captain: 'Reza Pratama',
-                achievements: ['Runner-up Liga Tapin 2023'],
-                players: [
-                    { number: 1, name: 'Arya Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bayu Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Citra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dava Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Esa Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Farel Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gibran Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hafiz Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irfan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Reza Pratama', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kenzo Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Luthfi Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Malik Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Omar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Tim yang dikenal dengan semangat pantang menyerah dan permainan yang penuh energi.'
-            },
-            'Banjarbaru United': {
-                group: 'B',
-                type: 'away',
-                coach: 'Dedy Hermawan',
-                founded: '2016',
-                city: 'Banjarbaru',
-                colors: 'Ungu & Putih',
-                captain: 'Arif Hidayat',
-                achievements: ['Juara Piala Banjarbaru 2024', 'Semifinalis Liga Kalsel 2023'],
-                players: [
-                    { number: 1, name: 'Akbar Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Brama Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Candra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dika Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Evan Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fadil Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Galih Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Arif Hidayat', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Ivan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Jaka Ramadhan', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Bayu', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Rahman', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Naufal Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Oscar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Putra Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qori Maulana', position: 'Utility Player' },
-                    { number: 18, name: 'Rizal Bayu', position: 'Utility Player' }
-                ],
-                description: 'Tim modern dari kota satelit yang menggabungkan teknik dan strategi dalam setiap permainan.'
-            },
-            'Martapura City FC': {
-                group: 'B',
-                type: 'local',
-                coach: 'Wahyu Setiawan',
-                founded: '2018',
-                city: 'Martapura',
-                colors: 'Merah & Biru',
-                captain: 'Bayu Anggara',
-                achievements: ['Juara Piala Martapura 2024'],
-                players: [
-                    { number: 1, name: 'Arga Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bayu Anggara', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cahyo Saputra', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dani Bayu', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eko Pratama', position: 'Bek Kiri' },
-                    { number: 6, name: 'Farid Ramadhan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gilang Kurniawan', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hadi Hidayat', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irvan Maulana', position: 'Penyerang' },
-                    { number: 10, name: 'Joko Pratama', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Omar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' }
-                ],
-                description: 'Tim dari kota berlian yang bermain dengan gaya elegan dan penuh perhitungan.'
-            },
-            'Tanah Laut Rangers': {
-                group: 'B',
-                type: 'away',
-                coach: 'Eko Prasetyo',
-                founded: '2017',
-                city: 'Pelaihari',
-                colors: 'Biru Muda & Putih',
-                captain: 'Gilang Ramadhan',
-                achievements: ['Juara Liga Tanah Laut 2023'],
-                players: [
-                    { number: 1, name: 'Aldi Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bima Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cakra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dafa Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eka Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fandi Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gilang Ramadhan', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Haris Hidayat', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irfan Maulana', position: 'Penyerang' },
-                    { number: 10, name: 'Jihan Pratama', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kafi Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lendra Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Mandra Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nizar Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Ovan Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pasha Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Tim dari daerah pesisir yang terkenal dengan permainan cepat dan serangan balik yang mematikan.'
-            },
-
-            // Grup C
-            'Banjar Selatan FC': {
-                group: 'C',
-                type: 'local',
-                coach: 'Irwan Setiadi',
-                founded: '2019',
-                city: 'Kandangan',
-                colors: 'Hijau & Kuning',
-                captain: 'Yoga Pratama',
-                achievements: ['Semifinalis Liga Tapin 2024'],
-                players: [
-                    { number: 1, name: 'Arya Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bayu Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Citra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dava Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Esa Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Yoga Pratama', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gibran Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hafiz Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irfan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Jaka Ramadhan', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kenzo Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Luthfi Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Malik Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Omar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' }
-                ],
-                description: 'Tim muda dengan semangat tinggi dan tekad kuat untuk meraih prestasi terbaik.'
-            },
-            'Hulu Sungai FC': {
-                group: 'C',
-                type: 'away',
-                coach: 'Bambang Sutrisno',
-                founded: '2016',
-                city: 'Kandangan',
-                colors: 'Coklat & Emas',
-                captain: 'Farel Naufal',
-                achievements: ['Juara Liga Hulu Sungai 2024'],
-                players: [
-                    { number: 1, name: 'Akbar Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Brama Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Candra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dika Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Evan Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Farel Naufal', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Galih Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hadi Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Ivan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Jaka Ramadhan', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Bayu', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Rahman', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Naufal Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Oscar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Putra Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qori Maulana', position: 'Utility Player' },
-                    { number: 18, name: 'Rizal Bayu', position: 'Utility Player' }
-                ],
-                description: 'Tim dari daerah pegunungan yang dikenal dengan fisik kuat dan mental juara.'
-            },
-            'Kandangan United': {
-                group: 'C',
-                type: 'local',
-                coach: 'Yudi Prasetya',
-                founded: '2020',
-                city: 'Kandangan',
-                colors: 'Merah & Hitam',
-                captain: 'Rafli Akbar',
-                achievements: ['Juara Tournament Kandangan 2024'],
-                players: [
-                    { number: 1, name: 'Arga Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bayu Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cahyo Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dani Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eko Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Farid Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gilang Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Rafli Akbar', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irvan Maulana', position: 'Penyerang' },
-                    { number: 10, name: 'Joko Pratama', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Omar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Tim baru yang penuh ambisi dan bermain dengan gaya modern serta inovatif.'
-            },
-            'Balangan United': {
-                group: 'C',
-                type: 'away',
-                coach: 'Suryadi Rahman',
-                founded: '2015',
-                city: 'Paringin',
-                colors: 'Biru Tua & Putih',
-                captain: 'Dimas Saputra',
-                achievements: ['Juara Liga Balangan 2023', 'Runner-up Piala Kalsel 2024'],
-                players: [
-                    { number: 1, name: 'Aldi Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bima Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cakra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dimas Saputra', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eka Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fandi Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Genta Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Haris Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irfan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Jihan Ramadhan', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kafi Bayu', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lendra Rahman', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Mandra Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nizar Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Ovan Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pasha Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Tim berpengalaman dengan tradisi sepakbola yang kuat dan permainan yang disiplin.'
-            },
-
-            // Grup D
-            'Tapin Muda FC': {
-                group: 'D',
-                type: 'local',
-                coach: 'Hasan Basri',
-                founded: '2021',
-                city: 'Rantau',
-                colors: 'Kuning & Biru',
-                captain: 'Alvin Pratama',
-                achievements: ['Juara Tournament Pemula 2024'],
-                players: [
-                    { number: 1, name: 'Arya Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bayu Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Citra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dava Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Esa Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Farel Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gibran Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hafiz Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Alvin Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Jaka Ramadhan', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kenzo Bayu', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Luthfi Rahman', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Malik Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Omar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' }
-                ],
-                description: 'Tim termuda dalam turnamen ini namun memiliki semangat dan antusiasme yang luar biasa.'
-            },
-            'Tabalong FC': {
-                group: 'D',
-                type: 'away',
-                coach: 'Ruslan Effendi',
-                founded: '2017',
-                city: 'Tanjung',
-                colors: 'Hijau Tua & Putih',
-                captain: 'Kevin Maulana',
-                achievements: ['Juara Liga Tabalong 2023'],
-                players: [
-                    { number: 1, name: 'Akbar Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Brama Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Candra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dika Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Evan Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fadil Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Galih Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hadi Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Ivan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Kevin Maulana', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Bayu', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Rahman', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Naufal Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Oscar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Putra Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qori Maulana', position: 'Utility Player' },
-                    { number: 18, name: 'Rizal Bayu', position: 'Utility Player' }
-                ],
-                description: 'Tim dari daerah pertambangan yang terkenal dengan kekuatan fisik dan mental yang tangguh.'
-            },
-            'Binuang Stars FC': {
-                group: 'D',
-                type: 'local',
-                coach: 'Fadli Ramadhan',
-                founded: '2019',
-                city: 'Binuang',
-                colors: 'Silver & Biru',
-                captain: 'Nabil Firdaus',
-                achievements: ['Runner-up Liga Binuang 2024'],
-                players: [
-                    { number: 1, name: 'Arga Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bayu Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cahyo Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dani Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eko Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Farid Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Gilang Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Hadi Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irvan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Nabil Firdaus', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Krisna Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lutfi Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Maulana Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nanda Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Omar Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pandu Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Tim yang bermain dengan gaya atraktif dan selalu memberikan pertunjukan yang menarik.'
-            },
-            'Banjar Utara FC': {
-                group: 'D',
-                type: 'away',
-                coach: 'Indra Gunawan',
-                founded: '2016',
-                city: 'Martapura',
-                colors: 'Merah Maroon & Emas',
-                captain: 'Rizky Ananda',
-                achievements: ['Semifinalis Liga Kalsel 2024'],
-                players: [
-                    { number: 1, name: 'Aldi Rahman', position: 'Kiper' },
-                    { number: 2, name: 'Bima Saputra', position: 'Bek Kanan' },
-                    { number: 3, name: 'Cakra Bayu', position: 'Bek Tengah' },
-                    { number: 4, name: 'Dafa Pratama', position: 'Bek Tengah' },
-                    { number: 5, name: 'Eka Ramadhan', position: 'Bek Kiri' },
-                    { number: 6, name: 'Fandi Kurniawan', position: 'Gelandang Bertahan' },
-                    { number: 7, name: 'Genta Hidayat', position: 'Gelandang Kanan' },
-                    { number: 8, name: 'Haris Maulana', position: 'Gelandang Tengah' },
-                    { number: 9, name: 'Irfan Pratama', position: 'Penyerang' },
-                    { number: 10, name: 'Rizky Ananda', position: 'Gelandang Serang' },
-                    { number: 11, name: 'Kafi Ramadhan', position: 'Sayap Kiri' },
-                    { number: 12, name: 'Lendra Bayu', position: 'Kiper Cadangan' },
-                    { number: 13, name: 'Mandra Saputra', position: 'Bek Cadangan' },
-                    { number: 14, name: 'Nizar Hidayat', position: 'Gelandang Cadangan' },
-                    { number: 15, name: 'Ovan Pratama', position: 'Penyerang Cadangan' },
-                    { number: 16, name: 'Pasha Ramadhan', position: 'Sayap Cadangan' },
-                    { number: 17, name: 'Qadri Maulana', position: 'Utility Player' }
-                ],
-                description: 'Tim dengan permainan yang solid dan strategi yang matang dalam setiap pertandingan.'
+            {
+                date: 'Jumat, 19 Desember 2025',
+                phase: 'Final',
+                matches: [
+                    { time: '08:00-09:15', venue: 'Lapangan I', home: 'Kalah Semifinal 1', away: 'Kalah Semifinal 2', score_home: null, score_away: null, label: '🥉 Perebutan Juara 3 & 4' },
+                    { time: '16:00-17:15', venue: 'Lapangan I', home: 'Menang Semifinal 1', away: 'Menang Semifinal 2', score_home: null, score_away: null, label: '🏆 Grand Final (Juara 1 & 2)' }
+                ]
             }
-        };
-
-        // Jadwal pertandingan
-        const schedule = [
-            { date: '4 Desember 2025', phase: 'Fase Grup - Hari 1', matches: 8 },
-            { date: '5 Desember 2025', phase: 'Fase Grup - Hari 2', matches: 8 },
-            { date: '6 Desember 2025', phase: 'Fase Grup - Hari 3', matches: 8 },
-            { date: '7 Desember 2025', phase: 'Semifinal', matches: 4 },
-            { date: '8 Desember 2025', phase: 'Final & Perebutan Juara 3', matches: 2 }
         ];
 
         // Global variables
@@ -1184,8 +728,7 @@
             onDataChanged(data) {
                 matchesData = data;
                 currentRecordCount = data.length;
-                renderMatches();
-                updateStandings();
+                calculateStandings();
             }
         };
 
@@ -1193,7 +736,7 @@
         const defaultConfig = {
             tournament_title: 'BRE CUP 2025',
             tournament_subtitle: 'Pertandingan Sepakbola U13',
-            tournament_date: '4-8 Desember 2025',
+            tournament_date: '15-19 Desember 2025',
             welcome_message: 'Selamat datang di turnamen sepakbola terbesar untuk kategori U13!',
             primary_color: '#3b82f6',
             secondary_color: '#10b981',
@@ -1202,276 +745,14 @@
             background_color: '#f9fafb'
         };
 
-        // Initialize team dropdowns
-        function initializeTeamDropdowns() {
-            const homeSelect = document.getElementById('team-home');
-            const awaySelect = document.getElementById('team-away');
+        // Calculate standings from schedule data
+        function calculateStandings() {
+            const standings = {};
             
+            // Initialize standings for all teams
             allTeams.forEach(team => {
-                const homeOption = document.createElement('option');
-                homeOption.value = team;
-                homeOption.textContent = team;
-                homeSelect.appendChild(homeOption);
-                
-                const awayOption = document.createElement('option');
-                awayOption.value = team;
-                awayOption.textContent = team;
-                awaySelect.appendChild(awayOption);
-            });
-        }
-
-        // Handle match form submission
-        async function handleMatchSubmit(event) {
-            event.preventDefault();
-            
-            if (currentRecordCount >= 999) {
-                showMessage('Batas maksimum 999 pertandingan telah tercapai. Hapus beberapa data terlebih dahulu.', 'error');
-                return;
-            }
-            
-            const submitButton = document.getElementById('submit-match');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = '💾 Menyimpan...';
-            submitButton.disabled = true;
-            
-            const formData = {
-                match_id: generateMatchId(),
-                date: document.getElementById('match-date').value,
-                time: document.getElementById('match-time').value,
-                team_home: document.getElementById('team-home').value,
-                team_away: document.getElementById('team-away').value,
-                score_home: parseInt(document.getElementById('score-home').value),
-                score_away: parseInt(document.getElementById('score-away').value),
-                group: document.getElementById('match-group').value,
-                phase: document.getElementById('match-phase').value,
-                status: 'completed',
-                goalscorers: document.getElementById('goalscorers').value || '',
-                yellow_cards: document.getElementById('yellow-cards').value || '',
-                red_cards: document.getElementById('red-cards').value || '',
-                man_of_match: document.getElementById('man-of-match').value || '',
-                attendance: document.getElementById('attendance').value ? parseInt(document.getElementById('attendance').value) : 0,
-                referee: document.getElementById('referee').value || '',
-                created_at: new Date().toISOString()
-            };
-            
-            if (formData.team_home === formData.team_away) {
-                showMessage('Tim tuan rumah dan tamu tidak boleh sama!', 'error');
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-                return;
-            }
-            
-            if (window.dataSdk) {
-                const result = await window.dataSdk.create(formData);
-                
-                if (result.isOk) {
-                    document.getElementById('match-form').reset();
-                    showMessage('Hasil pertandingan berhasil disimpan!', 'success');
-                } else {
-                    showMessage('Gagal menyimpan hasil pertandingan. Silakan coba lagi.', 'error');
-                }
-            }
-            
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-        }
-
-        // Generate unique match ID
-        function generateMatchId() {
-            return 'match_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-        }
-
-        // Show message to user
-        function showMessage(message, type) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `fixed top-4 right-4 z-50 px-6 py-3 rounded-xl shadow-2xl font-bold ${
-                type === 'success' ? 'bg-emerald-500 text-white' : 'bg-red-500 text-white'
-            }`;
-            messageDiv.textContent = message;
-            document.body.appendChild(messageDiv);
-            
-            setTimeout(() => {
-                messageDiv.remove();
-            }, 3000);
-        }
-
-        // Render matches list
-        function renderMatches() {
-            const container = document.getElementById('matches-list');
-            
-            if (matchesData.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center text-slate-500 py-12">
-                        <div class="text-6xl mb-6">⚽</div>
-                        <p class="text-xl font-bold">Belum ada hasil pertandingan yang diinput</p>
-                        <p class="text-sm font-semibold">Tambahkan hasil pertandingan menggunakan form di atas</p>
-                    </div>
-                `;
-                return;
-            }
-            
-            const sortedMatches = [...matchesData].sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-            
-            container.innerHTML = sortedMatches.map(match => `
-                <div class="sport-card rounded-2xl p-8 shadow-xl border-l-4 border-blue-500 mb-8 card-hover">
-                    <!-- Match Header -->
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="text-sm text-slate-600 font-semibold">
-                            📅 ${formatDate(match.date)} • ⏰ ${match.time} • 🏆 ${match.group ? `Grup ${match.group}` : match.phase}
-                        </div>
-                        <button onclick="deleteMatch('${match.__backendId}')" class="text-red-500 hover:text-red-700 text-sm px-4 py-2 rounded-xl hover:bg-red-50 transition-colors font-bold">
-                            🗑️ Hapus
-                        </button>
-                    </div>
-                    
-                    <!-- Score Display -->
-                    <div class="flex items-center justify-center space-x-8 mb-8">
-                        <div class="text-right flex-1">
-                            <div class="font-black text-xl text-slate-800">${match.team_home}</div>
-                            <div class="text-sm text-slate-500 font-semibold">Tuan Rumah</div>
-                        </div>
-                        <div class="sport-accent text-white px-8 py-4 rounded-2xl shadow-2xl">
-                            <span class="text-4xl font-black">${match.score_home}</span>
-                            <span class="text-white mx-4 text-2xl">-</span>
-                            <span class="text-4xl font-black">${match.score_away}</span>
-                        </div>
-                        <div class="text-left flex-1">
-                            <div class="font-black text-xl text-slate-800">${match.team_away}</div>
-                            <div class="text-sm text-slate-500 font-semibold">Tamu</div>
-                        </div>
-                    </div>
-
-                    <!-- Match Details -->
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <!-- Left Column -->
-                        <div class="space-y-6">
-                            ${match.goalscorers ? `
-                                <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl border-2 border-emerald-200">
-                                    <h5 class="font-black text-emerald-800 mb-3 flex items-center text-lg">
-                                        <span class="mr-3">⚽</span> Pencetak Gol
-                                    </h5>
-                                    <div class="text-sm text-emerald-700 space-y-2 font-semibold">
-                                        ${match.goalscorers.split(';').map(goal => 
-                                            `<div class="flex items-center">
-                                                <span class="w-3 h-3 bg-emerald-500 rounded-full mr-3"></span>
-                                                ${goal.trim()}
-                                            </div>`
-                                        ).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                            
-                            ${match.yellow_cards ? `
-                                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-2xl border-2 border-yellow-200">
-                                    <h5 class="font-black text-yellow-800 mb-3 flex items-center text-lg">
-                                        <span class="mr-3">🟨</span> Kartu Kuning
-                                    </h5>
-                                    <div class="text-sm text-yellow-700 space-y-2 font-semibold">
-                                        ${match.yellow_cards.split(';').map(card => 
-                                            `<div class="flex items-center">
-                                                <span class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span>
-                                                ${card.trim()}
-                                            </div>`
-                                        ).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                            
-                            ${match.red_cards ? `
-                                <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-2xl border-2 border-red-200">
-                                    <h5 class="font-black text-red-800 mb-3 flex items-center text-lg">
-                                        <span class="mr-3">🟥</span> Kartu Merah
-                                    </h5>
-                                    <div class="text-sm text-red-700 space-y-2 font-semibold">
-                                        ${match.red_cards.split(';').map(card => 
-                                            `<div class="flex items-center">
-                                                <span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
-                                                ${card.trim()}
-                                            </div>`
-                                        ).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                        </div>
-
-                        <!-- Right Column -->
-                        <div class="space-y-6">
-                            ${match.man_of_match ? `
-                                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl border-2 border-purple-200">
-                                    <h5 class="font-black text-purple-800 mb-3 flex items-center text-lg">
-                                        <span class="mr-3">🌟</span> Man of the Match
-                                    </h5>
-                                    <div class="text-sm text-purple-700 font-black">${match.man_of_match}</div>
-                                </div>
-                            ` : ''}
-                            
-                            ${match.referee ? `
-                                <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-2xl border-2 border-slate-200">
-                                    <h5 class="font-black text-slate-800 mb-3 flex items-center text-lg">
-                                        <span class="mr-3">👨‍⚖️</span> Wasit
-                                    </h5>
-                                    <div class="text-sm text-slate-700 font-semibold">${match.referee}</div>
-                                </div>
-                            ` : ''}
-                            
-                            ${match.attendance ? `
-                                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border-2 border-blue-200">
-                                    <h5 class="font-black text-blue-800 mb-3 flex items-center text-lg">
-                                        <span class="mr-3">👥</span> Penonton
-                                    </h5>
-                                    <div class="text-sm text-blue-700 font-black">${match.attendance} orang</div>
-                                </div>
-                            ` : ''}
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Delete match
-        async function deleteMatch(matchId) {
-            const matchToDelete = matchesData.find(m => m.__backendId === matchId);
-            if (!matchToDelete) return;
-            
-            if (window.dataSdk) {
-                const result = await window.dataSdk.delete(matchToDelete);
-                if (result.isOk) {
-                    showMessage('Hasil pertandingan berhasil dihapus!', 'success');
-                } else {
-                    showMessage('Gagal menghapus hasil pertandingan.', 'error');
-                }
-            }
-        }
-
-        // Format date
-        function formatDate(dateString) {
-            const date = new Date(dateString);
-            return date.toLocaleDateString('id-ID', { 
-                day: 'numeric', 
-                month: 'long', 
-                year: 'numeric' 
-            });
-        }
-
-        // Update standings
-        function updateStandings() {
-            const groups = ['A', 'B', 'C', 'D'];
-            
-            groups.forEach(group => {
-                const groupMatches = matchesData.filter(m => m.group === group && m.phase === 'Grup');
-                const standings = calculateGroupStandings(groupMatches, group);
-                renderGroupStandings(group, standings);
-            });
-        }
-
-        // Calculate group standings
-        function calculateGroupStandings(matches, group) {
-            const teams = {};
-            
-            // Initialize teams in group
-            allTeams.forEach(team => {
-                teams[team] = {
-                    name: team,
+                standings[team] = {
+                    team: team,
                     played: 0,
                     won: 0,
                     drawn: 0,
@@ -1483,139 +764,204 @@
                 };
             });
             
-            // Process matches
-            matches.forEach(match => {
-                const homeTeam = teams[match.team_home];
-                const awayTeam = teams[match.team_away];
-                
-                if (homeTeam && awayTeam) {
-                    homeTeam.played++;
-                    awayTeam.played++;
-                    
-                    homeTeam.goalsFor += match.score_home;
-                    homeTeam.goalsAgainst += match.score_away;
-                    awayTeam.goalsFor += match.score_away;
-                    awayTeam.goalsAgainst += match.score_home;
-                    
-                    if (match.score_home > match.score_away) {
-                        homeTeam.won++;
-                        homeTeam.points += 3;
-                        awayTeam.lost++;
-                    } else if (match.score_home < match.score_away) {
-                        awayTeam.won++;
-                        awayTeam.points += 3;
-                        homeTeam.lost++;
-                    } else {
-                        homeTeam.drawn++;
-                        awayTeam.drawn++;
-                        homeTeam.points += 1;
-                        awayTeam.points += 1;
+            // Process all matches from schedule data
+            scheduleData.forEach(day => {
+                day.matches.forEach(match => {
+                    // Only process matches with scores (completed matches)
+                    if (match.score_home !== null && match.score_away !== null) {
+                        const homeTeam = match.home;
+                        const awayTeam = match.away;
+                        
+                        // Skip placeholder teams
+                        if (homeTeam.includes('Kalah') || homeTeam.includes('Menang') || 
+                            awayTeam.includes('Kalah') || awayTeam.includes('Menang')) {
+                            return;
+                        }
+                        
+                        if (standings[homeTeam] && standings[awayTeam]) {
+                            standings[homeTeam].played++;
+                            standings[awayTeam].played++;
+                            
+                            standings[homeTeam].goalsFor += match.score_home;
+                            standings[homeTeam].goalsAgainst += match.score_away;
+                            standings[awayTeam].goalsFor += match.score_away;
+                            standings[awayTeam].goalsAgainst += match.score_home;
+                            
+                            if (match.score_home > match.score_away) {
+                                standings[homeTeam].won++;
+                                standings[homeTeam].points += 3;
+                                standings[awayTeam].lost++;
+                            } else if (match.score_home < match.score_away) {
+                                standings[awayTeam].won++;
+                                standings[awayTeam].points += 3;
+                                standings[homeTeam].lost++;
+                            } else {
+                                standings[homeTeam].drawn++;
+                                standings[awayTeam].drawn++;
+                                standings[homeTeam].points++;
+                                standings[awayTeam].points++;
+                            }
+                            
+                            standings[homeTeam].goalDifference = standings[homeTeam].goalsFor - standings[homeTeam].goalsAgainst;
+                            standings[awayTeam].goalDifference = standings[awayTeam].goalsFor - standings[awayTeam].goalsAgainst;
+                        }
                     }
-                    
-                    homeTeam.goalDifference = homeTeam.goalsFor - homeTeam.goalsAgainst;
-                    awayTeam.goalDifference = awayTeam.goalsFor - awayTeam.goalsAgainst;
-                }
+                });
             });
             
-            // Filter teams that have played and sort
-            return Object.values(teams)
-                .filter(team => team.played > 0)
+            // Convert to array and sort
+            const standingsArray = Object.values(standings)
+                .filter(team => team.played > 0) // Only show teams that have played
                 .sort((a, b) => {
                     if (b.points !== a.points) return b.points - a.points;
                     if (b.goalDifference !== a.goalDifference) return b.goalDifference - a.goalDifference;
                     return b.goalsFor - a.goalsFor;
                 });
-        }
-
-        // Render group standings
-        function renderGroupStandings(group, standings) {
-            const tableBody = document.getElementById(`group-${group.toLowerCase()}-table`);
             
-            if (standings.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="7" class="text-center py-6 text-slate-500 font-semibold">Belum ada data</td></tr>';
+            renderStandings(standingsArray);
+        }
+        
+        // Render standings table
+        function renderStandings(standingsArray) {
+            const tbody = document.getElementById('standings-table');
+            
+            if (!tbody) return;
+            
+            if (standingsArray.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="10" class="px-6 py-12 text-center">
+                            <div class="text-slate-500">
+                                <div class="text-4xl mb-4">📊</div>
+                                <div class="font-bold text-lg">Belum ada data klasemen</div>
+                                <div class="text-sm">Klasemen akan muncul setelah ada pertandingan yang dimainkan</div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
                 return;
             }
             
-            tableBody.innerHTML = standings.map((team, index) => `
-                <tr class="${index < 2 ? 'bg-gradient-to-r from-emerald-50 to-emerald-100' : ''}">
-                    <td class="px-4 py-3 font-black">${index + 1}</td>
-                    <td class="px-4 py-3 font-semibold">${team.name}</td>
-                    <td class="px-4 py-3 text-center font-semibold">${team.played}</td>
-                    <td class="px-4 py-3 text-center font-semibold">${team.won}</td>
-                    <td class="px-4 py-3 text-center font-semibold">${team.drawn}</td>
-                    <td class="px-4 py-3 text-center font-semibold">${team.lost}</td>
-                    <td class="px-4 py-3 text-center font-black text-lg">${team.points}</td>
-                </tr>
-            `).join('');
+            tbody.innerHTML = standingsArray.map((team, index) => {
+                const position = index + 1;
+                let rowClass = 'bg-white hover:bg-blue-50 transition-colors';
+                let positionBadge = `<div class="w-8 h-8 flex items-center justify-center font-black text-slate-600">${position}</div>`;
+                
+                // Highlight top 4 teams (qualify for quarter finals)
+                if (position === 1) {
+                    rowClass = 'bg-gradient-to-r from-yellow-50 to-yellow-100 hover:from-yellow-100 hover:to-yellow-200 transition-colors';
+                    positionBadge = `<div class="w-8 h-8 flex items-center justify-center bg-yellow-500 text-white rounded-lg font-black shadow-md">🥇</div>`;
+                } else if (position === 2) {
+                    rowClass = 'bg-gradient-to-r from-slate-50 to-slate-100 hover:from-slate-100 hover:to-slate-200 transition-colors';
+                    positionBadge = `<div class="w-8 h-8 flex items-center justify-center bg-slate-400 text-white rounded-lg font-black shadow-md">🥈</div>`;
+                } else if (position === 3) {
+                    rowClass = 'bg-gradient-to-r from-amber-50 to-amber-100 hover:from-amber-100 hover:to-amber-200 transition-colors';
+                    positionBadge = `<div class="w-8 h-8 flex items-center justify-center bg-amber-600 text-white rounded-lg font-black shadow-md">🥉</div>`;
+                } else if (position === 4) {
+                    rowClass = 'bg-gradient-to-r from-emerald-50 to-emerald-100 hover:from-emerald-100 hover:to-emerald-200 transition-colors';
+                    positionBadge = `<div class="w-8 h-8 flex items-center justify-center bg-emerald-500 text-white rounded-lg font-black shadow-md">${position}</div>`;
+                }
+                
+                const goalDiffClass = team.goalDifference > 0 ? 'text-emerald-600' : team.goalDifference < 0 ? 'text-red-600' : 'text-slate-600';
+                
+                return `
+                    <tr class="${rowClass}">
+                        <td class="px-6 py-4">${positionBadge}</td>
+                        <td class="px-6 py-4">
+                            <div class="font-black text-slate-800">${team.team}</div>
+                        </td>
+                        <td class="px-6 py-4 text-center font-bold text-slate-700">${team.played}</td>
+                        <td class="px-6 py-4 text-center font-bold text-emerald-600">${team.won}</td>
+                        <td class="px-6 py-4 text-center font-bold text-orange-600">${team.drawn}</td>
+                        <td class="px-6 py-4 text-center font-bold text-red-600">${team.lost}</td>
+                        <td class="px-6 py-4 text-center font-bold text-blue-600">${team.goalsFor}</td>
+                        <td class="px-6 py-4 text-center font-bold text-slate-600">${team.goalsAgainst}</td>
+                        <td class="px-6 py-4 text-center font-black ${goalDiffClass}">${team.goalDifference > 0 ? '+' : ''}${team.goalDifference}</td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="inline-block bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg font-black shadow-md">${team.points}</div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
         }
 
-        // Initialize teams
+        // Initialize teams display
         function initializeTeams() {
-            const localContainer = document.getElementById('local-teams');
-            const awayContainer = document.getElementById('away-teams');
+            const container = document.getElementById('all-teams-container');
             
-            localTeams.forEach((team, index) => {
-                const teamCard = createTeamCard(team, 'local', index + 1);
-                localContainer.appendChild(teamCard);
-            });
-            
-            awayTeams.forEach((team, index) => {
-                const teamCard = createTeamCard(team, 'away', index + 1);
-                awayContainer.appendChild(teamCard);
-            });
-        }
-
-        function createTeamCard(teamName, type, number) {
-            const card = document.createElement('div');
-            card.className = `team-card ${type}-team p-6 rounded-2xl shadow-xl card-hover`;
-            
-            const icon = type === 'local' ? '🏠' : '🌍';
-            const color = type === 'local' ? 'text-emerald-600' : 'text-orange-600';
-            
-            card.innerHTML = `
-                <div class="flex items-center">
-                    <div class="text-3xl mr-4">${icon}</div>
-                    <div>
-                        <h4 class="font-black ${color} text-lg">${teamName}</h4>
-                        <p class="text-slate-600 text-sm font-semibold">Tim #${number}</p>
+            allTeams.forEach((team, index) => {
+                const teamCard = document.createElement('div');
+                teamCard.className = 'team-card p-6 rounded-2xl shadow-xl card-hover';
+                
+                teamCard.innerHTML = `
+                    <div class="flex items-center">
+                        <div class="text-3xl mr-4">⚽</div>
+                        <div>
+                            <h4 class="font-black text-blue-600 text-lg">${team}</h4>
+                            <p class="text-slate-600 text-sm font-semibold">Tim #${index + 1}</p>
+                        </div>
                     </div>
-                </div>
-            `;
-            
-            return card;
+                `;
+                
+                container.appendChild(teamCard);
+            });
         }
 
         // Initialize schedule
         function initializeSchedule() {
             const container = document.getElementById('schedule-container');
             
-            schedule.forEach(day => {
+            scheduleData.forEach(day => {
                 const dayCard = document.createElement('div');
-                dayCard.className = 'sport-card rounded-2xl p-8 shadow-xl mb-8';
+                dayCard.className = 'sport-card rounded-2xl p-8 shadow-xl mb-10';
                 
-                dayCard.innerHTML = `
-                    <div class="schedule-item p-6 rounded-2xl mb-6">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h3 class="text-2xl font-black text-blue-600">${day.date}</h3>
-                                <p class="text-slate-700 font-black text-lg">${day.phase}</p>
-                            </div>
-                            <div class="text-right">
-                                <div class="text-3xl font-black text-blue-600">${day.matches}</div>
-                                <div class="text-slate-600 text-sm font-semibold">Pertandingan</div>
+                let matchesHTML = '';
+                day.matches.forEach(match => {
+                    const hasScore = match.score_home !== null && match.score_away !== null;
+                    const matchLabel = match.label ? `<div class="text-lg font-black text-purple-600 mb-2">${match.label}</div>` : '';
+                    
+                    matchesHTML += `
+                        <div class="schedule-item p-6 rounded-2xl mb-6">
+                            ${matchLabel}
+                            <div class="grid md:grid-cols-3 gap-4 items-center">
+                                <div class="text-sm text-slate-600 font-bold">
+                                    <div>⏰ ${match.time} WITA</div>
+                                    <div>🏟️ ${match.venue}</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-black text-slate-800 text-lg mb-2">
+                                        ${match.home} ${hasScore ? `<span class="text-blue-600">${match.score_home}</span>` : ''} 
+                                        <span class="text-slate-400">vs</span> 
+                                        ${hasScore ? `<span class="text-blue-600">${match.score_away}</span>` : ''} ${match.away}
+                                    </div>
+                                    ${!hasScore ? '<div class="text-sm text-orange-600 font-bold">Belum dimainkan</div>' : '<div class="text-sm text-emerald-600 font-bold">✓ Selesai</div>'}
+                                </div>
+                                <div class="text-right">
+                                    ${hasScore ? '<span class="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-lg font-bold text-sm">Finished</span>' : '<span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-lg font-bold text-sm">Scheduled</span>'}
+                                </div>
                             </div>
                         </div>
+                    `;
+                });
+                
+                dayCard.innerHTML = `
+                    <div class="mb-8">
+                        <h3 class="text-3xl font-black text-blue-600 mb-2">${day.date}</h3>
+                        <p class="text-lg text-slate-700 font-bold">${day.phase}</p>
                     </div>
+                    ${matchesHTML}
                 `;
                 
                 container.appendChild(dayCard);
             });
         }
 
+
+
         // Navigation
         function showSection(sectionName) {
             // Hide all sections
-            const sections = ['overview', 'teams', 'profiles', 'matches', 'standings', 'schedule', 'bracket'];
+            const sections = ['overview', 'teams', 'standings', 'schedule', 'bracket'];
             sections.forEach(section => {
                 const element = document.getElementById(`${section}-section`);
                 if (element) {
@@ -1633,134 +979,11 @@
             // Update navigation buttons
             const navButtons = document.querySelectorAll('.nav-btn');
             navButtons.forEach(btn => {
-                btn.className = 'nav-btn px-6 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200';
+                btn.className = 'nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0';
             });
             
             // Highlight active button
-            event.target.className = 'nav-btn sport-button px-6 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap';
-        }
-
-        // Show group profiles
-        function showGroupProfiles(group) {
-            // Hide all group profiles
-            const groupProfiles = document.querySelectorAll('.group-profiles');
-            groupProfiles.forEach(profile => {
-                profile.classList.add('hidden');
-            });
-            
-            // Show selected group
-            const targetGroup = document.getElementById(`group-${group.toLowerCase()}-profiles`);
-            if (targetGroup) {
-                targetGroup.classList.remove('hidden');
-            }
-            
-            // Update group tabs
-            const groupTabs = document.querySelectorAll('.group-tab');
-            groupTabs.forEach(tab => {
-                tab.className = 'group-tab px-6 py-3 rounded-xl font-black transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600';
-            });
-            
-            // Highlight active tab
-            event.target.className = 'group-tab sport-button px-6 py-3 rounded-xl font-black transition-all duration-300 text-white';
-        }
-
-        // Initialize team profiles
-        function initializeTeamProfiles() {
-            const groups = ['A', 'B', 'C', 'D'];
-            
-            groups.forEach(group => {
-                const container = document.getElementById(`group-${group.toLowerCase()}-teams`);
-                const groupTeams = Object.entries(teamProfiles).filter(([name, profile]) => profile.group === group);
-                
-                groupTeams.forEach(([teamName, profile]) => {
-                    const teamCard = createTeamProfileCard(teamName, profile);
-                    container.appendChild(teamCard);
-                });
-            });
-        }
-
-        // Create team profile card
-        function createTeamProfileCard(teamName, profile) {
-            const card = document.createElement('div');
-            card.className = 'sport-card rounded-2xl p-8 shadow-xl card-hover border-l-6';
-            
-            const borderColor = profile.type === 'local' ? 'border-emerald-500' : 'border-orange-500';
-            card.classList.add(borderColor);
-            
-            const typeIcon = profile.type === 'local' ? '🏠' : '🌍';
-            const typeLabel = profile.type === 'local' ? 'Tim Lokal' : 'Tim Luar';
-            
-            card.innerHTML = `
-                <div class="flex items-start justify-between mb-6">
-                    <div>
-                        <h4 class="text-2xl font-black text-slate-800 mb-2">${teamName}</h4>
-                        <div class="flex items-center text-sm text-slate-600 font-semibold">
-                            <span class="mr-2">${typeIcon}</span>
-                            <span>${typeLabel} • ${profile.city}</span>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <div class="text-sm text-slate-500 font-semibold">Didirikan</div>
-                        <div class="font-black text-blue-600 text-lg">${profile.founded}</div>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <div class="text-sm text-slate-500 font-semibold">Pelatih</div>
-                        <div class="font-black text-lg">${profile.coach}</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-slate-500 font-semibold">Kapten</div>
-                        <div class="font-black text-lg">${profile.captain}</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-slate-500 font-semibold">Warna Tim</div>
-                        <div class="font-black text-lg">${profile.colors}</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-slate-500 font-semibold">Jumlah Pemain</div>
-                        <div class="font-black text-lg">${profile.players.length} orang</div>
-                    </div>
-                </div>
-                
-                <div class="mb-6">
-                    <div class="text-sm text-slate-500 mb-3 font-semibold">Prestasi</div>
-                    <div class="space-y-2">
-                        ${profile.achievements.map(achievement => 
-                            `<div class="flex items-center text-sm font-semibold">
-                                <span class="text-yellow-500 mr-3 text-lg">🏆</span>
-                                <span>${achievement}</span>
-                            </div>`
-                        ).join('')}
-                    </div>
-                </div>
-
-                <!-- Daftar Pemain -->
-                <div class="mb-6">
-                    <div class="text-sm text-slate-500 mb-4 font-semibold">Daftar Pemain</div>
-                    <div class="grid grid-cols-1 gap-3 max-h-64 overflow-y-auto">
-                        ${profile.players.map(player => 
-                            `<div class="flex items-center justify-between bg-gradient-to-r from-slate-50 to-slate-100 p-3 rounded-xl border border-slate-200">
-                                <div class="flex items-center">
-                                    <div class="player-number mr-3">${player.number}</div>
-                                    <div>
-                                        <div class="font-black text-slate-800">${player.name}</div>
-                                        <div class="text-xs text-slate-500 font-semibold">${player.position}</div>
-                                    </div>
-                                </div>
-                            </div>`
-                        ).join('')}
-                    </div>
-                </div>
-                
-                <div class="border-t-2 border-slate-200 pt-6">
-                    <div class="text-sm text-slate-500 mb-3 font-semibold">Deskripsi</div>
-                    <p class="text-slate-700 text-sm leading-relaxed font-medium">${profile.description}</p>
-                </div>
-            `;
-            
-            return card;
+            event.target.className = 'nav-btn sport-button px-5 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap snap-start flex-shrink-0';
         }
 
         // Element SDK implementation
@@ -1774,11 +997,6 @@
             if (subtitleElement) subtitleElement.textContent = config.tournament_subtitle || defaultConfig.tournament_subtitle;
             if (dateElement) dateElement.innerHTML = `📅 ${config.tournament_date || defaultConfig.tournament_date}`;
             if (messageElement) messageElement.textContent = config.welcome_message || defaultConfig.welcome_message;
-            
-            // Apply colors
-            document.documentElement.style.setProperty('--primary-color', config.primary_color || defaultConfig.primary_color);
-            document.documentElement.style.setProperty('--secondary-color', config.secondary_color || defaultConfig.secondary_color);
-            document.documentElement.style.setProperty('--accent-color', config.accent_color || defaultConfig.accent_color);
         }
 
         function mapToCapabilities(config) {
@@ -1827,15 +1045,8 @@
         // Initialize everything
         document.addEventListener('DOMContentLoaded', async function() {
             initializeTeams();
-            initializeTeamProfiles();
             initializeSchedule();
-            initializeTeamDropdowns();
-            
-            // Add form event listener
-            const matchForm = document.getElementById('match-form');
-            if (matchForm) {
-                matchForm.addEventListener('submit', handleMatchSubmit);
-            }
+            calculateStandings();
             
             // Initialize Data SDK
             if (window.dataSdk) {
@@ -1856,5 +1067,5 @@
             }
         });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a0ddaff81294717',t:'MTc2MzUzNTg4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aeef642b757fe11',t:'MTc2NTg5NjMwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
