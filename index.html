@@ -279,7 +279,7 @@
   </header><!-- Navigation -->
   <nav class="nav-modern sticky top-0 z-20 shadow-lg">
    <div class="max-w-6xl mx-auto px-2">
-    <div class="flex md:justify-center gap-2 py-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch; scroll-behavior: smooth; scroll-padding: 0 8px;"><button onclick="showSection('overview')" class="nav-btn sport-button px-5 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap snap-start flex-shrink-0"> 📊 Ringkasan </button> <button onclick="showSection('teams')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 👥 Tim </button> <button onclick="showSection('standings')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📊 Klasemen </button> <button onclick="showSection('schedule')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📅 Jadwal </button> <button onclick="showSection('bracket')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 🏆 Bracket </button>
+    <div class="flex md:justify-center gap-2 py-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch; scroll-behavior: smooth; scroll-padding: 0 8px;"><button onclick="showSection('overview')" class="nav-btn sport-button px-5 py-3 rounded-xl font-bold transition-all duration-300 text-white text-sm whitespace-nowrap snap-start flex-shrink-0"> 📊 Ringkasan </button> <button onclick="showSection('teams')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 👥 Tim </button> <button onclick="showSection('standings')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📊 Klasemen </button> <button onclick="showSection('schedule')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 📅 Jadwal </button> <button onclick="showSection('bracket')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> 🏆 Bracket </button> <button onclick="showSection('topscorer')" class="nav-btn px-5 py-3 rounded-xl font-bold transition-all duration-300 text-slate-700 hover:bg-blue-50 hover:text-blue-600 text-sm whitespace-nowrap border-2 border-transparent hover:border-blue-200 snap-start flex-shrink-0"> ⚽ Top Skor </button>
     </div><!-- Scroll Indicator -->
     <div class="md:hidden text-center pb-2">
      <div class="inline-flex items-center text-xs text-slate-400 font-semibold">
@@ -523,6 +523,226 @@
       <li class="flex items-start font-semibold"><span class="text-orange-500 mr-3 text-lg mt-1">🌦️</span> <span>Pertandingan dapat ditunda karena faktor cuaca dan dilanjutkan keesokan harinya (Force Majeure)</span></li>
      </ul>
     </div>
+   </section><!-- Top Scorer Section -->
+   <section id="topscorer-section" class="hidden">
+    <div class="text-center mb-12">
+     <div class="inline-block bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 text-white px-8 py-4 rounded-3xl shadow-2xl mb-4 animate-pulse">
+      <h2 class="text-4xl font-black">⚽ TOP SKOR BRE CUP 2025</h2>
+     </div>
+     <p class="text-slate-600 font-bold text-lg mt-4">Daftar Pencetak Gol Terbanyak</p>
+    </div><!-- Top 3 Podium -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12"><!-- Rank 2 -->
+     <div class="bg-gradient-to-br from-slate-100 via-slate-200 to-slate-100 rounded-3xl p-8 shadow-2xl border-4 border-slate-300 transform md:translate-y-8">
+      <div class="text-center">
+       <div class="bg-gradient-to-br from-slate-300 to-slate-400 w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl border-4 border-white"><span class="text-5xl">🥈</span>
+       </div>
+       <div class="bg-slate-300 text-slate-800 px-6 py-2 rounded-full inline-block font-black text-2xl mb-4 shadow-lg">
+        2ND
+       </div>
+       <h3 class="text-2xl font-black text-slate-800 mb-2">Muhammad Zul Fadhli</h3>
+       <p class="text-slate-600 font-bold mb-4">NPG 10 • SSB Nagara Dipa</p>
+       <div class="bg-gradient-to-br from-orange-500 to-orange-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+        <div class="text-4xl font-black">
+         4
+        </div>
+        <div class="text-sm font-semibold">
+         Gol
+        </div>
+       </div>
+      </div>
+     </div><!-- Rank 1 -->
+     <div class="bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-100 rounded-3xl p-8 shadow-2xl border-4 border-yellow-400 transform md:scale-110">
+      <div class="text-center">
+       <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 w-28 h-28 rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl border-4 border-white animate-pulse"><span class="text-6xl">🥇</span>
+       </div>
+       <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-8 py-3 rounded-full inline-block font-black text-3xl mb-4 shadow-xl">
+        1ST
+       </div>
+       <h3 class="text-3xl font-black text-yellow-800 mb-2">Muhammad Era Satria</h3>
+       <p class="text-yellow-700 font-bold mb-4 text-lg">NPG 9 • Haus Soccer</p>
+       <div class="bg-gradient-to-br from-red-500 to-red-600 text-white px-10 py-6 rounded-2xl shadow-2xl">
+        <div class="text-5xl font-black">
+         4
+        </div>
+        <div class="text-lg font-semibold">
+         Gol
+        </div>
+       </div>
+      </div>
+     </div><!-- Rank 3 -->
+     <div class="bg-gradient-to-br from-amber-100 via-amber-200 to-amber-100 rounded-3xl p-8 shadow-2xl border-4 border-amber-400 transform md:translate-y-8">
+      <div class="text-center">
+       <div class="bg-gradient-to-br from-amber-500 to-amber-600 w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl border-4 border-white"><span class="text-5xl">🥉</span>
+       </div>
+       <div class="bg-amber-500 text-white px-6 py-2 rounded-full inline-block font-black text-2xl mb-4 shadow-lg">
+        3RD
+       </div>
+       <h3 class="text-2xl font-black text-amber-800 mb-2">Muhammad Hafi</h3>
+       <p class="text-amber-700 font-bold mb-4">NPG 7 • SSB Arasi</p>
+       <div class="bg-gradient-to-br from-orange-500 to-orange-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+        <div class="text-4xl font-black">
+         3
+        </div>
+        <div class="text-sm font-semibold">
+         Gol
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Other Top Scorers -->
+    <div class="sport-card rounded-2xl p-8 shadow-xl mb-8">
+     <h3 class="text-2xl font-black text-slate-800 mb-6 flex items-center"><span class="mr-3">🎯</span> Daftar Lengkap Top Skor</h3>
+     <div class="space-y-4"><!-- Rank 3 (tied) -->
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 hover:scale-[1.02] transition-all duration-300">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+         <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg"><span class="text-2xl font-black">3</span>
+         </div>
+         <div>
+          <h4 class="text-xl font-black text-slate-800">Muhammad Sanadil Hasan</h4>
+          <p class="text-slate-600 font-semibold">NPG 6 • SSB Sejarah Barokah MTP</p>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-orange-500 to-orange-600 text-white px-6 py-3 rounded-xl shadow-lg">
+         <div class="text-3xl font-black">
+          3
+         </div>
+         <div class="text-xs font-semibold">
+          Gol
+         </div>
+        </div>
+       </div>
+      </div><!-- Rank 5 -->
+      <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-6 border-2 border-slate-200 hover:scale-[1.02] transition-all duration-300">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+         <div class="bg-gradient-to-br from-slate-400 to-slate-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg"><span class="text-2xl font-black">5</span>
+         </div>
+         <div>
+          <h4 class="text-xl font-black text-slate-800">Muhammad Nararya Alvaro</h4>
+          <p class="text-slate-600 font-semibold">NPG 6 • SSB Arasi</p>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white px-6 py-3 rounded-xl shadow-lg">
+         <div class="text-3xl font-black">
+          2
+         </div>
+         <div class="text-xs font-semibold">
+          Gol
+         </div>
+        </div>
+       </div>
+      </div><!-- Rank 5 (tied) -->
+      <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-6 border-2 border-slate-200 hover:scale-[1.02] transition-all duration-300">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+         <div class="bg-gradient-to-br from-slate-400 to-slate-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg"><span class="text-2xl font-black">5</span>
+         </div>
+         <div>
+          <h4 class="text-xl font-black text-slate-800">Muhammad Yuris Rapiq Akbar</h4>
+          <p class="text-slate-600 font-semibold">NPG 11 • SSB Arasi</p>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white px-6 py-3 rounded-xl shadow-lg">
+         <div class="text-3xl font-black">
+          2
+         </div>
+         <div class="text-xs font-semibold">
+          Gol
+         </div>
+        </div>
+       </div>
+      </div><!-- Rank 5 (tied) -->
+      <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-6 border-2 border-slate-200 hover:scale-[1.02] transition-all duration-300">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+         <div class="bg-gradient-to-br from-slate-400 to-slate-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg"><span class="text-2xl font-black">5</span>
+         </div>
+         <div>
+          <h4 class="text-xl font-black text-slate-800">Muhammad Alvin Fadillah</h4>
+          <p class="text-slate-600 font-semibold">NPG 3 • SSB Arasi</p>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white px-6 py-3 rounded-xl shadow-lg">
+         <div class="text-3xl font-black">
+          2
+         </div>
+         <div class="text-xs font-semibold">
+          Gol
+         </div>
+        </div>
+       </div>
+      </div><!-- Rank 5 (tied) -->
+      <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-6 border-2 border-slate-200 hover:scale-[1.02] transition-all duration-300">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+         <div class="bg-gradient-to-br from-slate-400 to-slate-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg"><span class="text-2xl font-black">5</span>
+         </div>
+         <div>
+          <h4 class="text-xl font-black text-slate-800">Nazriel Maulana</h4>
+          <p class="text-slate-600 font-semibold">NPG 11 • SSB Nagara Dipa</p>
+         </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white px-6 py-3 rounded-xl shadow-lg">
+         <div class="text-3xl font-black">
+          2
+         </div>
+         <div class="text-xs font-semibold">
+          Gol
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Stats -->
+    <div class="grid md:grid-cols-3 gap-6">
+     <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-6 shadow-xl text-white">
+      <div class="flex items-center justify-between mb-4"><span class="text-4xl">👑</span>
+       <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full"><span class="font-black text-2xl">4</span>
+       </div>
+      </div>
+      <div class="font-black text-xl">
+       Gol Terbanyak
+      </div>
+      <div class="text-red-100 text-sm font-semibold">
+       Muhammad Era Satria
+      </div>
+     </div>
+     <div class="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 shadow-xl text-white">
+      <div class="flex items-center justify-between mb-4"><span class="text-4xl">🏆</span>
+       <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full"><span class="font-black text-2xl">3</span>
+       </div>
+      </div>
+      <div class="font-black text-xl">
+       Tim SSB Arasi
+      </div>
+      <div class="text-purple-100 text-sm font-semibold">
+       Pencetak Gol Terbanyak
+      </div>
+     </div>
+     <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 shadow-xl text-white">
+      <div class="flex items-center justify-between mb-4"><span class="text-4xl">⚽</span>
+       <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full"><span class="font-black text-2xl">8</span>
+       </div>
+      </div>
+      <div class="font-black text-xl">
+       Total Pemain
+      </div>
+      <div class="text-blue-100 text-sm font-semibold">
+       Dalam Daftar Top Skor
+      </div>
+     </div>
+    </div><!-- Note -->
+    <div class="bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl p-6 shadow-2xl mt-8 border-2 border-slate-600">
+     <div class="flex items-start text-white">
+      <div class="bg-orange-500 rounded-full p-3 mr-4"><span class="text-2xl">📊</span>
+      </div>
+      <div>
+       <h4 class="font-black text-xl mb-2">Info Top Skor</h4>
+       <p class="text-slate-300 font-semibold">Daftar pencetak gol akan diperbarui setelah setiap pertandingan selesai. Hanya gol yang dicatat secara resmi yang masuk dalam statistik.</p>
+      </div>
+     </div>
+    </div>
    </section><!-- Bracket Section -->
    <section id="bracket-section" class="hidden">
     <h2 class="text-4xl font-black text-center text-slate-800 mb-12">🏆 Bracket Turnamen</h2>
@@ -696,7 +916,7 @@
             'Tapin Tengah JR',
             'SSB Nagara Dipa',
             'SSB AYPA',
-            'SSB Sejahtera MTP',
+            'SSB Sejarah Barokah MTP',
             'SOBP Banjarbaru',
             'SSB GMS',
             'SSB Panca',
@@ -718,7 +938,7 @@
                 matches: [
                     { time: '17:30-18:45', venue: 'Lapangan I', home: 'SOBP Tapin', away: 'Tapin Tengah JR', score_home: 2, score_away: 1 },
                     { time: '17:30-18:45', venue: 'Lapangan II', home: 'SSB Nagara Dipa', away: 'SSB AYPA', score_home: 7, score_away: 1 },
-                    { time: '18:45-20:30', venue: 'Lapangan I', home: 'SSB Sejahtera MTP', away: 'SOBP Banjarbaru', score_home: 3, score_away: 0 }
+                    { time: '18:45-20:30', venue: 'Lapangan I', home: 'SSB Sejarah Barokah MTP', away: 'SOBP Banjarbaru', score_home: 3, score_away: 0 }
                 ]
             },
             {
@@ -732,7 +952,7 @@
                     { time: '10:30-11:45', venue: 'Lapangan II', home: 'SOBP Tabalong', away: 'SSB Batu Agung', score_home: 3, score_away: 2 },
                     { time: '15:00-16:15', venue: 'Lapangan I', home: 'SOBP Tapin', away: 'SSB Arasi', score_home: 1, score_away: 6 },
                     { time: '15:00-16:15', venue: 'Lapangan II', home: 'SOBP Tabalong', away: 'SSB Nagara Dipa', score_home: 3, score_away: 4 },
-                    { time: '16:15-17:30', venue: 'Lapangan I', home: 'SSB Surapati', away: 'SSB Sejahtera MTP', score_home: 1, score_away: 5 },
+                    { time: '16:15-17:30', venue: 'Lapangan I', home: 'SSB Surapati', away: 'SSB Sejarah Barokah MTP', score_home: 1, score_away: 5 },
                     { time: '16:15-17:30', venue: 'Lapangan II', home: 'SSB Panca', away: 'Haus Soccer Kodim 1007', score_home: 0, score_away: 6 }
                 ]
             },
@@ -740,7 +960,7 @@
                 date: 'Rabu, 17 Desember 2025',
                 phase: 'Semifinal - Pertandingan 1',
                 matches: [
-                    { time: '16:00-17:15', venue: 'Lapangan I', home: 'SSB Arasi', away: 'SSB Sejahtera MTP', score_home: null, score_away: null }
+                    { time: '16:00-17:15', venue: 'Lapangan I', home: 'SSB Arasi', away: 'SSB Sejarah Barokah MTP', score_home: null, score_away: null }
                 ]
             },
             {
@@ -1072,7 +1292,7 @@
         // Navigation
         function showSection(sectionName) {
             // Hide all sections
-            const sections = ['overview', 'teams', 'standings', 'schedule', 'bracket'];
+            const sections = ['overview', 'teams', 'standings', 'schedule', 'bracket', 'topscorer'];
             sections.forEach(section => {
                 const element = document.getElementById(`${section}-section`);
                 if (element) {
@@ -1178,5 +1398,5 @@
             }
         });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aef04d2f218ce61',t:'MTc2NTg5Njg5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9af297e7063151fc',t:'MTc2NTkzNDM3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
